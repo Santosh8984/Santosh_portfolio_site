@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh - Data Analyst Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+   
+
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .contact-input {
+            transition: all 0.3s ease;
+        }
+        .contact-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="bar-chart-2" class="text-blue-500 h-6 w-6"></i>
+                        <span class="ml-2 font-bold text-gray-800">Santosh</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#intro" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">Introduction</a>
+                    <a href="#project1" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">First Project</a>
+                    <a href="#project2" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">Second Project</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact Me</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-500 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="bar-chart-2" class="text-blue-500 h-8 w-8"></i>
+                        <span class="ml-2 text-sm font-semibold text-blue-600">Data Analytics Professional </span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Santosh</span></h1>
+                    <p class="text-lg text-gray-600 mb-6">"Converting raw data into actionable insights for smarter business decisions."</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                        <span class="skill-tag bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Excel</span>
+                        <span class="skill-tag bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Power BI</span>
+                        <span class="skill-tag bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Google Data Studio  </span>
+                        <span class="skill-tag bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Tableau</span>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105">Contact Me</a>
+                        <a href="https://www.linkedin.com/in/santosh-datanalyst" target="_blank" class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">View LinkedIn Profile</a>
+
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center" data-aos="fade-left">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="image/pic7.png" alt="Santosh">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">"Transforming Data into Actionable Business Decisions"</h3>
+                    <p class="text-gray-600 mb-6">I’m Santosh, an aspiring Data
+                         Analyst driven by the belief that every dataset hides a powerful story. With hands-on skills in SQL, Excel, Power BI, Python, and Tableau, I specialize in transforming raw data into clear, actionable insights that support smarter business decisions.
+
+My approach blends technical proficiency with a strategic mindset—whether it’s building interactive dashboards, uncovering hidden patterns, or crafting visualizations that speak to real-world challenges. I’m passionate about helping organizations make data-driven decisions through predictive modeling,
+ storytelling, and analytical problem-solving.</p>
+                    <p class="text-gray-600 mb-6">I'm passionate about helping organizations make data-driven decisions through clear visualizations, predictive modeling, and strategic recommendations.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i data-feather="database" class="text-blue-500 h-6 w-6 mb-2"></i>
+                            <h4 class="font-medium text-gray-800">Data Processing</h4>
+                            <p class="text-sm text-gray-600">Cleaning, transforming, and preparing data for analysis</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i data-feather="trending-up" class="text-blue-500 h-6 w-6 mb-2"></i>
+                            <h4 class="font-medium text-gray-800">Predictive Analytics</h4>
+                            <p class="text-sm text-gray-600">Building models to forecast trends and behaviors</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i data-feather="pie-chart" class="text-blue-500 h-6 w-6 mb-2"></i>
+                            <h4 class="font-medium text-gray-800">Data Visualization</h4>
+                            <p class="text-sm text-gray-600">Creating intuitive dashboards and reports</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i data-feather="bar-chart-2" class="text-blue-500 h-6 w-6 mb-2"></i>
+                            <h4 class="font-medium text-gray-800">Business Intelligence</h4>
+                            <p class="text-sm text-gray-600">Translating data into strategic recommendations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">My Skills</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Python</span>
+                                <span class="text-sm font-medium text-gray-500">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">SQL</span>
+                                <span class="text-sm font-medium text-gray-500">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-green-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Power BI</span>
+                                <span class="text-sm font-medium text-gray-500">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Tableau</span>
+                                <span class="text-sm font-medium text-gray-500">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Excel</span>
+                                <span class="text-sm font-medium text-gray-500">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 1 Section -->
+    <section id="project1" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">First Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="md:flex md:items-center md:space-x-12 mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="image/pic8.png" alt="Sales Dashboard" class="w-full rounded-xl shadow-lg transform hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">Power BI</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Smart loan insights Dashboard</h3>
+                    <p class="text-gray-600 mb-6">"I built a Loan Insights Dashboard that helps banks and finance teams track and manage loans. It shows key details like total loans, overdue payments, loan types, and repayment trends. The dashboard makes it easy to find risky loans,
+                         understand customer behavior, and improve decision-making." </p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">Data Visualization</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Loan  Analysis</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">KPI Tracking</span>
+                    </div>
+                    <a href="https://github.com/Santosh8984/-Smart-Loan-Insights-Dashboard-" 
+   target="_blank" 
+   class="inline-flex items-center text-blue-600 font-medium">
+   View Case Study
+   <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+</a>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2 Section -->
+    <section id="project2" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0 order-2" data-aos="fade-left">
+                    <img src="image/pic9.png" alt="Machine Learning Model" class="w-full rounded-xl shadow-lg transform hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+                <div class="md:w-1/2 order-1" data-aos="fade-right">
+                    <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium mb-4">Customer Behavior Analytics</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Customer Churn Dashboard</h3>
+                    <p class="text-gray-600 mb-6">I built a Customer Churn Analysis Dashboard to help businesses identify patterns in customer behavior. It highlights total customers, churn rates, and activity levels, segmented by gender. With clear visuals and interactive filters, this dashboard empowers
+                         teams to make data-driven decisions to improve retention.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-medium">pandas</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Excel</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">powerbi</span>
+                    </div>
+                    
+                    <a href="https://github.com/Santosh8984/Customer-Churn-Dashboard" target="_blank" class="inline-flex items-center text-blue-600 font-medium">
+    View Case Study
+    <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">“Interested in collaborating or discussing new opportunities? I’d love to hear from you!”</p>
+            </div>
+            
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                    <i data-feather="mail" class="text-blue-600 h-5 w-5"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                                    <p class="text-gray-800">situsantosh0@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                    <i data-feather="map-pin" class="text-blue-600 h-5 w-5"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Location</h4>
+                                    <p class="text-gray-800">india,odisha</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                    <i data-feather="phone" class="text-blue-600 h-5 w-5"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Phone</h4>
+                                    <p class="text-gray-800">+91 8984799381</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-sm font-medium text-gray-500 mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/santosh-datanalyst" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="linkedin" class="text-blue-700 h-5 w-5"></i>
+</a>
+
+                               <a href="https://github.com/Santosh8984" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="github" class="text-gray-800 h-5 w-5"></i>
+</a>
+
+                                <a href="https://wa.me/918984799381" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="phone" class="text-green-500 h-5 w-5"></i>
+</a>
+
+                               <a href="https://t.me/Santoshsitu8984" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="send" class="text-blue-500 h-5 w-5"></i>
+</a>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="text-center md:text-left">
+                    <p class="text-sm font-medium">© 2025 Santosh. All rights reserved.</p>
+                    <p class="text-sm mt-1">india,odisha</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex justify-center md:justify-end space-x-6">
+                        <a href="https://www.linkedin.com/in/santosh-datanalyst" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="linkedin" class="text-blue-700 h-5 w-5"></i>
+</a>
+
+                        <a href="https://wa.me/918984799381" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="phone" class="text-green-500 h-5 w-5"></i>
+</a>
+
+                            <a href="https://www.linkedin.com/in/santosh-datanalyst" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="linkedin" class="text-blue-700 h-5 w-5"></i>
+</a>
+                        <a href="https://t.me/Santoshsitu8984" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300" target="_blank">
+    <i data-feather="send" class="text-blue-500 h-5 w-5"></i>
+</a>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.id = 'mobile-menu';
+            mobileMenu.className = 'hidden md:hidden bg-white shadow-lg rounded-lg mt-2 py-2 absolute right-4 w-48';
+            mobileMenu.innerHTML = `
+                <a href="#intro" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Introduction</a>
+                <a href="#project1" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">First Project</a>
+                <a href="#project2" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Second Project</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Me</a>
+            `;
+            document.body.appendChild(mobileMenu);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                
+                // Change icon
+                const icon = this.querySelector('i');
+                if (isExpanded) {
+                    icon.setAttribute('data-feather', 'menu');
+                } else {
+                    icon.setAttribute('data-feather', 'x');
+                }
+                feather.replace();
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    const icon = mobileMenuButton.querySelector('i');
+                    icon.setAttribute('data-feather', 'menu');
+                    feather.replace();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
