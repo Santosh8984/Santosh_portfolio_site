@@ -432,49 +432,57 @@ My approach blends technical proficiency with a strategic mindsetâ€”whether itâ€
         feather.replace();
         
         // Mobile menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
-            const mobileMenu = document.createElement('div');
-            mobileMenu.id = 'mobile-menu';
-            mobileMenu.className = 'hidden md:hidden bg-white shadow-lg rounded-lg mt-2 py-2 absolute right-4 w-48';
-            mobileMenu.innerHTML = `
-                <a href="#intro" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Introduction</a>
-                <a href="#project1" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">First Project</a>
-                <a href="#project2" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Second Project</a>
-                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Me</a>
-            `;
-            document.body.appendChild(mobileMenu);
-            
-            mobileMenuButton.addEventListener('click', function() {
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', !isExpanded);
-                mobileMenu.classList.toggle('hidden');
-                
-                // Change icon
-                const icon = this.querySelector('i');
-                if (isExpanded) {
-                    icon.setAttribute('data-feather', 'menu');
-                } else {
-                    icon.setAttribute('data-feather', 'x');
-                }
-                feather.replace();
-            });
-            
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.setAttribute('aria-expanded', 'false');
-                    const icon = mobileMenuButton.querySelector('i');
-                    icon.setAttribute('data-feather', 'menu');
-                    feather.replace();
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+       <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.id = 'mobile-menu';
+    mobileMenu.className = 'hidden md:hidden bg-white shadow-lg rounded-lg mt-2 py-2 absolute right-4 w-48 transition-all duration-300 ease-in-out transform scale-y-0 origin-top';
+    mobileMenu.innerHTML = `
+        <a href="#intro" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Introduction</a>
+        <a href="#project1" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">First Project</a>
+        <a href="#project2" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Second Project</a>
+        <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Me</a>
+    `;
+    document.body.appendChild(mobileMenu);
+    
+    mobileMenuButton.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+            // hide
+            mobileMenu.classList.add('scale-y-0', 'hidden');
+            mobileMenu.classList.remove('scale-y-100');
+        } else {
+            // show
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenu.classList.remove('scale-y-0');
+                mobileMenu.classList.add('scale-y-100');
+            }, 10);
+        }
 
-
-
-
+        // Change icon
+        const icon = this.querySelector('i');
+        if (isExpanded) {
+            icon.setAttribute('data-feather', 'menu');
+        } else {
+            icon.setAttribute('data-feather', 'x');
+        }
+        feather.replace();
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add('scale-y-0', 'hidden');
+            mobileMenu.classList.remove('scale-y-100');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            const icon = mobileMenuButton.querySelector('i');
+            icon.setAttribute('data-feather', 'menu');
+            feather.replace();
+        }
+    });
+});
+</script>
